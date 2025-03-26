@@ -1,0 +1,245 @@
+.img {
+    width: 500px;
+    height: auto;
+    border: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.announcement{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.navlist a:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    color: #007bff;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+.navbar a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.hover-img{
+    width: 100%;
+    height: 450px;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.hover-img:hover{
+    opacity: 0.1;
+}
+
+.about-section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.about-section h2 {
+    color: #585bff;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.academic-tables{
+    padding: 20px;
+}
+
+.table-section{
+    margin-bottom: 40px;
+}
+
+.table-section h2{
+    color: #585bff;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+ .info-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+ }
+
+ .info-table th, .info-table td{
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+ }
+
+ .info-table th{
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.info-table tr:hover{
+    background-color:  #f5f5f5;
+}
+
+.info-table td{
+    color: #666;
+}
+h2{
+    color: #585bff;;
+}
+
+.navlist a[href="students.html"] {
+    position: relative;
+}
+
+.student-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f8f9fa;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1001;
+}
+
+.navlist a[href="students.html"]:hover .student-submenu {
+    display: block;
+}
+
+.student-submenu a {
+    padding: 8px 15px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.student-submenu a:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.document-list {
+    padding: 20px 0;
+}
+
+.document-item{
+    margin-bottom: 30px;
+}
+
+.document-item h4{
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.document-item ul{
+    list-style: none;
+    padding: 0;
+}
+
+.document-item li {
+    margin-bottom: 10px;
+}
+
+.document-item a {
+    color: #585bff;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.document-item a:hover {
+    background-color: #e9ecef;
+    color: #007bff;
+    padding-left: 15px;
+    text-decoration: none;
+}
+ .student-section{
+    margin-bottom: 50px;
+ }
+ #Documents {
+    margin-top: 50px;
+ }
+.video-container{
+    position: relative;
+    width: 100%;
+    max-width: 860px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color:#fff;
+
+}
+.video-container iframe {
+    width: 100%;
+    border-radius: 5px;
+}
