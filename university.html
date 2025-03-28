@@ -3,34 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Eskisehir Technical University - History and Information">
+    <meta name="keywords" content="ESTU, university, education, eskisehir, technical university, about">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>university</title>
+    <title>ESTU - University</title>
 </head>
 <body>
-    <div class="navbar">
-        <ul class="navlist">
-            <a href="home.html">home</a>
-            <a href="university.html" class="active">university</a>
-            <a href="academics.html">academics</a>
-            <a href="students.html">students</a>
-            <a href="campuslife.html">campuslife</a>
-        </ul>
-    </div>
+    <header class="header">
+        <h1>ESKISEHIR TECHNICAL UNIVERSITY</h1>
+    </header>
 
-    <div class="main-content">
-        <img src="estu foto 2.jpg" alt="universtyphoto" class="hover-img">
-        <section class="about-section">
-            <h2>About us</h2>
-            <p>Eskişehir Technical University, or ESTÜ for short (English: Eskişehir Technical University), is a public university in
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="university.html" class="active">UNIVERSITY</a></li>
+            <li><a href="academics.html">ACADEMICS</a></li>
+            <li><a href="students.html">STUDENTS
+                <div class="student-submenu">
+                    <a href="students.html#login">Student Login</a>
+                </div>
+            </a></li>
+            <li><a href="campuslife.html">CAMPUS LIFE</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <img src="estu foto 2.jpg" alt="Eskisehir Technical University Campus View" class="hover-img">
+        </section>
+        
+        <article class="about-section">
+            <h2>About Us</h2>
+            <p class="original">Eskişehir Technical University, or ESTÜ for short (English: Eskişehir Technical University), is a public university in
             Turkey. It started providing education in Eskişehir on May 18, 2018, with five faculties, three institutes, and two
             vocational schools on two different campuses, through the transfer of various educational units belonging to Anadolu
             University.[1] As of 2019, the university continues its educational activities with 1,317 personnel and approximately
             14,000 students.[2]</p>
-            <h2>Number of students</h2>
-            <p>We currently have over 11001 students</p>
-        </section>
-    </div>
+            <span class="dots">...</span>
+            <p class="extra">Thanks to the Hasan Polatkan Airport it contains, it is one of the largest universities in Turkey. The university has
+            the world's first licensed university airport with its operating license in 2007.[2]
+            
+            The only center in Turkey where seismic isolators can be tested is at ESTU. ESTU Seismic Isolator Center is also one of
+            the top 5 centers in the world. ESTU is one of the rare universities that offer pilot training, and the piloting program
+            is among the departments that accept students with the highest score.</p>
+          
+            <section class="statistics">
+                <h2>Number of Students</h2>
+                <p>We currently have over 11001 students</p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Eskisehir Technical University. All rights reserved.</p>
+    </footer>
 </body>
 </html>
